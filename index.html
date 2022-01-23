@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind preview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        penguin: '#FFFBF0',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container mx-auto px-16 py-12 bg-slate-600">
+            <div class="header flex items-center justify-between">
+                <div class="logo flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="white" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path
+                            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                    </svg>
+                    <h1 class="text-2xl font-bold text-lime-500">PenguinFashion</h1>
+                </div>
+                <div class="menu">
+                    <ul class="flex items-center">
+                        <li class="text-white pl-6">home</li>
+                        <li class="text-white pl-6">about</li>
+                        <li class="text-white pl-6">contact</li>
+                        <li class="text-white pl-6">help section</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main>
+
+        <section
+            class="container mx-auto px-16 py-12 sm:flex sm:justify-between items-center bg-penguin space-y-6 sm:space-y-0 ">
+            <div class="hero-section space-y-4 ">
+                <h1 class="text-4xl text-yellow-400 font-bold uppercase">be the penguin <span class="text-black">
+                        of the winter
+                    </span></h1>
+                <p class="">Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry.</p>
+                <button class="btn bg-green-500  text-white h-12 w-32 rounded-lg ">
+                    <p> <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 inline" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg> Buy Now</a></p>
+                </button>
+            </div>
+
+            <div class="images ">
+                <img src="images/sliders/slider-1.jpg" class="w-80 rounded-lg" alt="">
+            </div>
+        </section>
+
+        <!-- section cart  -->
+
+        <section class="carts container mx-auto px-16 py-12 ">
+            <h2 class="text-5xl font-bold pb-4">Premium Bags</h2>
+            <div class=" grid sm:grid-cols-2 lg:grid-cols-3 gap-4 ">
+
+                <div class=" cart  bg-slate-200 shadow-lg p-4 rounded-lg">
+                    <div class="images  rounded-lg">
+                        <img src="images/Bags/bags-1.jpg" class="p-4 " alt="">
+                    </div>
+                    <div class="text">
+                        <h2 class="text-3xl ">Premimum Bag</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae minima officia,
+                            voluptatem
+                            aut ut eaque cupiditate dignissimos! Ipsum soluta magni voluptatibus quis necessitatibus nam
+                            praesentium explicabo. Reiciendis vitae inventore quas.</p>
+                        <div class="price flex justify-between">
+                            <h4 class="text-4xl font-bold text-yellow-500">$234</h4>
+                            <button class="btn bg-green-500  text-white h-12 w-32 rounded-lg ">
+                                <p> <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                        </svg> Buy Now</a></p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" cart  bg-slate-200 shadow-lg p-4 rounded-lg">
+                    <div class="images bg-slate-200">
+                        <img src="images/Bags/bags-10.jpg" class="p-4" alt="">
+                    </div>
+                    <div class="text">
+                        <h2 class="text-3xl ">Premimum Bag</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae minima officia,
+                            voluptatem
+                            aut ut eaque cupiditate dignissimos! Ipsum soluta magni voluptatibus quis necessitatibus nam
+                            praesentium explicabo. Reiciendis vitae inventore quas.</p>
+                        <div class="price flex justify-between">
+                            <h4 class="text-4xl font-bold text-yellow-500">$234</h4>
+                            <button class="btn bg-green-500  text-white h-12 w-32 rounded-lg ">
+                                <p> <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                        </svg> Buy Now</a></p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" cart  bg-slate-200 shadow-lg p-4 rounded-lg">
+                    <div class="images bg-slate-200">
+                        <img src="images/Bags/bags-1.jpg" class="p-4" alt="">
+                    </div>
+                    <div class="text">
+                        <h2 class="text-3xl ">Premimum Bag</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae minima officia,
+                            voluptatem
+                            aut ut eaque cupiditate dignissimos! Ipsum soluta magni voluptatibus quis necessitatibus nam
+                            praesentium explicabo. Reiciendis vitae inventore quas.</p>
+                        <div class="price flex justify-between">
+                            <h4 class="text-4xl font-bold text-yellow-500">$234</h4>
+                            <button class="btn bg-green-500  text-white h-12 w-32 rounded-lg ">
+                                <p> <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                        </svg> Buy Now</a></p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="carts container mx-auto px-16 py-12 ">
+            <h2 class="text-5xl font-bold pb-4">Premium Bags</h2>
+            <div class=" grid sm:grid-cols-2 lg:grid-cols-3 gap-4 ">
+
+                <div class=" cart  bg-slate-200 shadow-lg p-4 rounded-lg">
+                    <div class="images  rounded-lg">
+                        <img src="images/shoes/shoe-10.jpg" class="p-4 w-96 h-80 rounded-sm hover:skew-x-12 " alt="">
+                    </div>
+                    <div class="text space-y-4">
+                        <h2 class="text-3xl ">Premimum Bag</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae minima officia,
+                            voluptatem
+                            aut ut eaque cupiditate dignissimos! Ipsum soluta magni voluptatibus quis necessitatibus nam
+                            praesentium explicabo. Reiciendis vitae inventore quas.</p>
+                        <div class="price flex justify-between">
+                            <h4 class="text-4xl font-bold text-yellow-500">$234</h4>
+                            <button class="btn bg-green-500  text-white h-12 w-32 rounded-lg ">
+                                <p> <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                        </svg> Buy Now</a></p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" cart  bg-slate-200 shadow-lg p-4 rounded-lg">
+                    <div class="images bg-slate-200">
+                        <img src="images/shoes/shoe-11.jpg" class="p-4 w-96 h-80 rounded-sm hover:skew-x-12 " alt="">
+                    </div>
+                    <div class="text space-y-4">
+                        <h2 class="text-3xl ">Premimum Bag</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae minima officia,
+                            voluptatem
+                            aut ut eaque cupiditate dignissimos! Ipsum soluta magni voluptatibus quis necessitatibus nam
+                            praesentium explicabo. Reiciendis vitae inventore quas.</p>
+                        <div class="price flex justify-between">
+                            <h4 class="text-4xl font-bold text-yellow-500">$234</h4>
+                            <button class="btn bg-green-500  text-white h-12 w-32 rounded-lg ">
+                                <p> <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                        </svg> Buy Now</a></p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" cart  bg-slate-200 shadow-lg p-4 rounded-lg">
+                    <div class="images bg-slate-200">
+                        <img src="images/shoes/shoe-4.jpg" class="p-4 w-96 h-80 rounded-sm hover:skew-x-12 " alt="">
+                    </div>
+                    <div class="text space-y-4">
+                        <h2 class="text-3xl ">Premimum Bag</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae minima officia,
+                            voluptatem
+                            aut ut eaque cupiditate dignissimos! Ipsum soluta magni voluptatibus quis necessitatibus nam
+                            praesentium explicabo. Reiciendis vitae inventore quas.</p>
+                        <div class="price flex justify-between">
+                            <h4 class="text-4xl font-bold text-yellow-500">$234</h4>
+                            <button class="btn bg-green-500  text-white h-12 w-32 rounded-lg ">
+                                <p> <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                        </svg> Buy Now</a></p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact section  -->
+
+        <section class=" contact container px-16 py-12 mx-auto bg-slate-400" id="contact">
+            <div class=" grid grid-cols-2 gap-4">
+
+                <div class="contact-find p-4 bg-gray-100 rounded-lg  flex items-center gap-x-8 ">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+
+                    <div class="text space-y-4">
+                        <h2 class="text-3xl">Find the Perfect Fit</h2>
+                        <p>Everybody is different which is why we offers different style</p>
+                    </div>
+                </div>
+                <div class="contact-find p-4 row-span-3">
+                    <img src="images/sliders/slider-1.jpg" alt="">
+                </div>
+                <div class="contact-find p-4 bg-gray-100 rounded-lg  flex items-center gap-x-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                    </svg>
+                    <div class="text space-y-4">
+                        <h2 class="text-3xl">Free Exchanges</h2>
+                        <p>Everybody is different which is why we offers different style</p>
+                    </div>
+                </div>
+
+                <div class="contact-find p-4 bg-gray-100 rounded-lg  flex items-center gap-x-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                            d="M14.414 7l3.293-3.293a1 1 0 00-1.414-1.414L13 5.586V4a1 1 0 10-2 0v4.003a.996.996 0 00.617.921A.997.997 0 0012 9h4a1 1 0 100-2h-1.586z" />
+                        <path
+                            d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                    </svg>
+                    <div class="text space-y-4">
+                        <h2 class="text-3xl">Contact Our Seller</h2>
+                        <p>One of the many reasons you can shop
+                            with peace of mind.</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="container mx-auto px-16 py-12 bg-slate-900">
+            <p class="text-center text-2xl text-lime-50">Copyright <span class="text-2xl font-black">&copy;</span>
+                restricted </p>
+
+        </div>
+    </footer>
+</body>
+
+</html>
